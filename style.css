@@ -1,0 +1,19 @@
+.h1 {
+  text-align: center;
+}
+.d-flex {
+  width: 50%;
+  height: 1;
+
+  border-style: solid;
+  boder-radius: 20px;
+
+}
+.small {
+  background-color: lightgrey;
+}
+.form-group input {
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+}
