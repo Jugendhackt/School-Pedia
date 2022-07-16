@@ -28,8 +28,8 @@ def register():
                            created_at=datetime.utcnow()
                            )
 
-        registration_mail = RegistrationMail(recipient=user)
-        registration_mail.send()
+        #registration_mail = RegistrationMail(recipient=user)
+        #registration_mail.send()
 
         flash("You have been registered successfully. Please valid your email", "success")
         return redirect(url_for("main.index"))
