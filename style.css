@@ -21,3 +21,8 @@
 #demo2 {
   display: flex;
 }
+.content {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 4px;
+}
