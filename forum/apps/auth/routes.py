@@ -31,7 +31,7 @@ def register():
         #registration_mail = RegistrationMail(recipient=user)
         #registration_mail.send()
 
-        flash("You have been registered successfully. Please valid your email", "success")
+        flash("You have been registered successfully.")
         return redirect(url_for("main.index"))
 
     return render_template('auth/register.html', form=registration_form)
