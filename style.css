@@ -1,4 +1,4 @@
-.h1 {
+/* .h1 {
   text-align: center;
 }
 .d-flex {
@@ -16,4 +16,8 @@
   width: 100%;
   border-style: solid;
   border-color: black;
+} */
+
+#demo2 {
+  display: flex;
 }

@@ -1,7 +1,7 @@
 <html>
  <head>
    <title>School-Pedia</title>
-   <link href="/style.css" rel="stylesheet" type="text/css" />
+   <link href="../style.css" rel="stylesheet" type="text/css" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -71,7 +71,10 @@
 <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Frage" value="" rows="15"><br><br>
 <button onclick="as()" class="btn btn-dark">Frage senden</button>
 <br><br>
-<p id="demo"></p><br>
+
+<!-- kommentarbereich -->
+<div id="demo"><p> </p></div><div id="demo2"><div id="counter-for-thumbs-up">0</div><div>
+<img src="./iconjpeg.jpg" width="20px" height="20px" onclick="thumbsUp()"></div></div>
 <hr>
      <div class="card-footer text-muted">© 2022, School-Pedia JHRN, Mannheim
    </div>
@@ -81,6 +84,12 @@ function as  () {
   var x = document.getElementById("exampleFormControlTextarea1").value;
   document.getElementById("demo").innerHTML = x;
 }
+var counterTu = 0;
+function thumbsUp () {
+  counterTu ++;
+  document.getElementById("counter-for-thumbs-up").innerHTML = counterTu;
+}
+
 </script>
 </body>
 </html>
