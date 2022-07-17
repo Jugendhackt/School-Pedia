@@ -7,10 +7,9 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
        crossorigin="anonymous"></script>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
- </head>
+     <meta name="viewport" content="width=device-width, initial-scale=1"> </head>
+  <body>
 
- <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid"><a class="navbar-brand" href="#">Navigation</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -65,7 +64,7 @@
       <p class="card-text">
         <abbr title="Frage beantworten">
           <a href="file:///C:/Users/Begeisterbus/Documents/GitHub/School-Pedia/home/frage-beantworten">
-          Hilf anderen in dem du Fragen beantwortest.</a>
+          Beantworte eine Frage und hilf so anderen.</a>
           </abbr>
         </p>
     </div>
@@ -87,9 +86,6 @@
    </div>
 
 <script>
-
-fillStorage();
-
 function as  () {
   var x = document.getElementById("exampleFormControlTextarea1").value;
   document.getElementById("demo").innerHTML = x;
@@ -125,6 +121,8 @@ function sortFunction(a,b) {
          return (a[0] > b[0]) ? -1 :1;
     }
 }
+
+fillStorage();
 
 function fillStorage() {
   clearStorage();
